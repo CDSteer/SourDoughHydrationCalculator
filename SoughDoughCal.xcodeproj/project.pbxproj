@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF49992D1EF49D1500EAD301 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF49992C1EF49D1500EAD301 /* AppDelegate.swift */; };
+		AF49992F1EF49D1500EAD301 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF49992E1EF49D1500EAD301 /* ViewController.swift */; };
+		AF4999321EF49D1500EAD301 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF4999301EF49D1500EAD301 /* Main.storyboard */; };
+		AF4999351EF49D1500EAD301 /* SoughDoughCal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AF4999331EF49D1500EAD301 /* SoughDoughCal.xcdatamodeld */; };
+		AF4999371EF49D1500EAD301 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF4999361EF49D1500EAD301 /* Assets.xcassets */; };
+		AF49993A1EF49D1500EAD301 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF4999381EF49D1500EAD301 /* LaunchScreen.storyboard */; };
+		AF4999451EF49D1600EAD301 /* SoughDoughCalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4999441EF49D1600EAD301 /* SoughDoughCalTests.swift */; };
+		AF4999501EF49D1600EAD301 /* SoughDoughCalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF49994F1EF49D1600EAD301 /* SoughDoughCalUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF4999411EF49D1600EAD301 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF4999211EF49D1500EAD301 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF4999281EF49D1500EAD301;
+			remoteInfo = SoughDoughCal;
+		};
+		AF49994C1EF49D1600EAD301 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF4999211EF49D1500EAD301 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF4999281EF49D1500EAD301;
+			remoteInfo = SoughDoughCal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AF4999291EF49D1500EAD301 /* SoughDoughCal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoughDoughCal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF49992C1EF49D1500EAD301 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AF49992E1EF49D1500EAD301 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AF4999311EF49D1500EAD301 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AF4999341EF49D1500EAD301 /* SoughDoughCal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SoughDoughCal.xcdatamodel; sourceTree = "<group>"; };
+		AF4999361EF49D1500EAD301 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF4999391EF49D1500EAD301 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AF49993B1EF49D1500EAD301 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF4999401EF49D1600EAD301 /* SoughDoughCalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoughDoughCalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF4999441EF49D1600EAD301 /* SoughDoughCalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoughDoughCalTests.swift; sourceTree = "<group>"; };
+		AF4999461EF49D1600EAD301 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF49994B1EF49D1600EAD301 /* SoughDoughCalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoughDoughCalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF49994F1EF49D1600EAD301 /* SoughDoughCalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoughDoughCalUITests.swift; sourceTree = "<group>"; };
+		AF4999511EF49D1600EAD301 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF4999261EF49D1500EAD301 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF49993D1EF49D1600EAD301 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF4999481EF49D1600EAD301 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF4999201EF49D1500EAD301 = {
+			isa = PBXGroup;
+			children = (
+				AF49992B1EF49D1500EAD301 /* SoughDoughCal */,
+				AF4999431EF49D1600EAD301 /* SoughDoughCalTests */,
+				AF49994E1EF49D1600EAD301 /* SoughDoughCalUITests */,
+				AF49992A1EF49D1500EAD301 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AF49992A1EF49D1500EAD301 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF4999291EF49D1500EAD301 /* SoughDoughCal.app */,
+				AF4999401EF49D1600EAD301 /* SoughDoughCalTests.xctest */,
+				AF49994B1EF49D1600EAD301 /* SoughDoughCalUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF49992B1EF49D1500EAD301 /* SoughDoughCal */ = {
+			isa = PBXGroup;
+			children = (
+				AF49992C1EF49D1500EAD301 /* AppDelegate.swift */,
+				AF49992E1EF49D1500EAD301 /* ViewController.swift */,
+				AF4999301EF49D1500EAD301 /* Main.storyboard */,
+				AF4999361EF49D1500EAD301 /* Assets.xcassets */,
+				AF4999381EF49D1500EAD301 /* LaunchScreen.storyboard */,
+				AF49993B1EF49D1500EAD301 /* Info.plist */,
+				AF4999331EF49D1500EAD301 /* SoughDoughCal.xcdatamodeld */,
+			);
+			path = SoughDoughCal;
+			sourceTree = "<group>";
+		};
+		AF4999431EF49D1600EAD301 /* SoughDoughCalTests */ = {
+			isa = PBXGroup;
+			children = (
+				AF4999441EF49D1600EAD301 /* SoughDoughCalTests.swift */,
+				AF4999461EF49D1600EAD301 /* Info.plist */,
+			);
+			path = SoughDoughCalTests;
+			sourceTree = "<group>";
+		};
+		AF49994E1EF49D1600EAD301 /* SoughDoughCalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AF49994F1EF49D1600EAD301 /* SoughDoughCalUITests.swift */,
+				AF4999511EF49D1600EAD301 /* Info.plist */,
+			);
+			path = SoughDoughCalUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF4999281EF49D1500EAD301 /* SoughDoughCal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF4999541EF49D1600EAD301 /* Build configuration list for PBXNativeTarget "SoughDoughCal" */;
+			buildPhases = (
+				AF4999251EF49D1500EAD301 /* Sources */,
+				AF4999261EF49D1500EAD301 /* Frameworks */,
+				AF4999271EF49D1500EAD301 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoughDoughCal;
+			productName = SoughDoughCal;
+			productReference = AF4999291EF49D1500EAD301 /* SoughDoughCal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AF49993F1EF49D1600EAD301 /* SoughDoughCalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF4999571EF49D1600EAD301 /* Build configuration list for PBXNativeTarget "SoughDoughCalTests" */;
+			buildPhases = (
+				AF49993C1EF49D1600EAD301 /* Sources */,
+				AF49993D1EF49D1600EAD301 /* Frameworks */,
+				AF49993E1EF49D1600EAD301 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF4999421EF49D1600EAD301 /* PBXTargetDependency */,
+			);
+			name = SoughDoughCalTests;
+			productName = SoughDoughCalTests;
+			productReference = AF4999401EF49D1600EAD301 /* SoughDoughCalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AF49994A1EF49D1600EAD301 /* SoughDoughCalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF49995A1EF49D1600EAD301 /* Build configuration list for PBXNativeTarget "SoughDoughCalUITests" */;
+			buildPhases = (
+				AF4999471EF49D1600EAD301 /* Sources */,
+				AF4999481EF49D1600EAD301 /* Frameworks */,
+				AF4999491EF49D1600EAD301 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF49994D1EF49D1600EAD301 /* PBXTargetDependency */,
+			);
+			name = SoughDoughCalUITests;
+			productName = SoughDoughCalUITests;
+			productReference = AF49994B1EF49D1600EAD301 /* SoughDoughCalUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF4999211EF49D1500EAD301 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Cameron Steer";
+				TargetAttributes = {
+					AF4999281EF49D1500EAD301 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = PA72X6ECF5;
+						ProvisioningStyle = Automatic;
+					};
+					AF49993F1EF49D1600EAD301 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = PA72X6ECF5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AF4999281EF49D1500EAD301;
+					};
+					AF49994A1EF49D1600EAD301 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = PA72X6ECF5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AF4999281EF49D1500EAD301;
+					};
+				};
+			};
+			buildConfigurationList = AF4999241EF49D1500EAD301 /* Build configuration list for PBXProject "SoughDoughCal" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF4999201EF49D1500EAD301;
+			productRefGroup = AF49992A1EF49D1500EAD301 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF4999281EF49D1500EAD301 /* SoughDoughCal */,
+				AF49993F1EF49D1600EAD301 /* SoughDoughCalTests */,
+				AF49994A1EF49D1600EAD301 /* SoughDoughCalUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF4999271EF49D1500EAD301 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF49993A1EF49D1500EAD301 /* LaunchScreen.storyboard in Resources */,
+				AF4999371EF49D1500EAD301 /* Assets.xcassets in Resources */,
+				AF4999321EF49D1500EAD301 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF49993E1EF49D1600EAD301 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF4999491EF49D1600EAD301 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF4999251EF49D1500EAD301 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF49992F1EF49D1500EAD301 /* ViewController.swift in Sources */,
+				AF49992D1EF49D1500EAD301 /* AppDelegate.swift in Sources */,
+				AF4999351EF49D1500EAD301 /* SoughDoughCal.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF49993C1EF49D1600EAD301 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF4999451EF49D1600EAD301 /* SoughDoughCalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF4999471EF49D1600EAD301 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF4999501EF49D1600EAD301 /* SoughDoughCalUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF4999421EF49D1600EAD301 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF4999281EF49D1500EAD301 /* SoughDoughCal */;
+			targetProxy = AF4999411EF49D1600EAD301 /* PBXContainerItemProxy */;
+		};
+		AF49994D1EF49D1600EAD301 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF4999281EF49D1500EAD301 /* SoughDoughCal */;
+			targetProxy = AF49994C1EF49D1600EAD301 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AF4999301EF49D1500EAD301 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF4999311EF49D1500EAD301 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AF4999381EF49D1500EAD301 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF4999391EF49D1500EAD301 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF4999521EF49D1600EAD301 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AF4999531EF49D1600EAD301 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF4999551EF49D1600EAD301 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PA72X6ECF5;
+				INFOPLIST_FILE = SoughDoughCal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fitlab.SoughDoughCal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AF4999561EF49D1600EAD301 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PA72X6ECF5;
+				INFOPLIST_FILE = SoughDoughCal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fitlab.SoughDoughCal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		AF4999581EF49D1600EAD301 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = PA72X6ECF5;
+				INFOPLIST_FILE = SoughDoughCalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fitlab.SoughDoughCalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoughDoughCal.app/SoughDoughCal";
+			};
+			name = Debug;
+		};
+		AF4999591EF49D1600EAD301 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = PA72X6ECF5;
+				INFOPLIST_FILE = SoughDoughCalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fitlab.SoughDoughCalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoughDoughCal.app/SoughDoughCal";
+			};
+			name = Release;
+		};
+		AF49995B1EF49D1600EAD301 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = PA72X6ECF5;
+				INFOPLIST_FILE = SoughDoughCalUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fitlab.SoughDoughCalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SoughDoughCal;
+			};
+			name = Debug;
+		};
+		AF49995C1EF49D1600EAD301 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = PA72X6ECF5;
+				INFOPLIST_FILE = SoughDoughCalUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fitlab.SoughDoughCalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SoughDoughCal;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF4999241EF49D1500EAD301 /* Build configuration list for PBXProject "SoughDoughCal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF4999521EF49D1600EAD301 /* Debug */,
+				AF4999531EF49D1600EAD301 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF4999541EF49D1600EAD301 /* Build configuration list for PBXNativeTarget "SoughDoughCal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF4999551EF49D1600EAD301 /* Debug */,
+				AF4999561EF49D1600EAD301 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AF4999571EF49D1600EAD301 /* Build configuration list for PBXNativeTarget "SoughDoughCalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF4999581EF49D1600EAD301 /* Debug */,
+				AF4999591EF49D1600EAD301 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AF49995A1EF49D1600EAD301 /* Build configuration list for PBXNativeTarget "SoughDoughCalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF49995B1EF49D1600EAD301 /* Debug */,
+				AF49995C1EF49D1600EAD301 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AF4999331EF49D1500EAD301 /* SoughDoughCal.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AF4999341EF49D1500EAD301 /* SoughDoughCal.xcdatamodel */,
+			);
+			currentVersion = AF4999341EF49D1500EAD301 /* SoughDoughCal.xcdatamodel */;
+			path = SoughDoughCal.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AF4999211EF49D1500EAD301 /* Project object */;
+}
