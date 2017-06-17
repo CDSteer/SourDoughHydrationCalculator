@@ -1,26 +1,150 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SoughDoughCal" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Flour (grams)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RPS-C5-51Y">
+                                <rect key="frame" x="27" y="212" width="103" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Water (grams)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dY2-xJ-I9O">
+                                <rect key="frame" x="27" y="245" width="109" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Starter (grams)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hxg-w7-AJ4">
+                                <rect key="frame" x="27" y="283" width="117" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="agB-3F-pO4" userLabel="StarterTextField">
+                                <rect key="frame" x="196" y="280" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="textViewDidBeginEditing:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="Sdj-wW-J2f"/>
+                                    <action selector="textViewDidBeginEditing:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fHj-PM-L0R"/>
+                                    <action selector="textViewDidEndEditing:" destination="BYZ-38-t0r" eventType="editingChanged" id="3xb-9k-XcJ"/>
+                                    <action selector="textViewDidEndEditing:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="A8T-6N-lW5"/>
+                                    <action selector="textViewDidEndEditing:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="AKm-Qb-CR7"/>
+                                    <action selector="textViewDidEndEditing:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="HSG-D4-kAA"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Starter Hydration (%)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ABP-sZ-rTE">
+                                <rect key="frame" x="27" y="317" width="161" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CkA-qe-LUm" userLabel="Starter@HydrationTextField">
+                                <rect key="frame" x="196" y="314" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="textViewDidBeginEditing:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="dmC-qg-pQk"/>
+                                    <action selector="textViewDidBeginEditing:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wdc-Fs-4wA"/>
+                                    <action selector="textViewDidEndEditing:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="0kv-d4-aE5"/>
+                                    <action selector="textViewDidEndEditing:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="9Qy-uq-BdJ"/>
+                                    <action selector="textViewDidEndEditing:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="Dvq-hh-RgF"/>
+                                    <action selector="textViewDidEndEditing:" destination="BYZ-38-t0r" eventType="editingChanged" id="inu-Rx-hGP"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fY6-vb-KlZ" userLabel="WaterTextField">
+                                <rect key="frame" x="196" y="242" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="textViewDidBeginEditing:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XbQ-mB-SFr"/>
+                                    <action selector="textViewDidBeginEditing:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="cp0-AC-W3b"/>
+                                    <action selector="textViewDidEndEditing:" destination="BYZ-38-t0r" eventType="editingChanged" id="Maz-Sf-cNF"/>
+                                    <action selector="textViewDidEndEditing:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="dQQ-3f-IEb"/>
+                                    <action selector="textViewDidEndEditing:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="wST-ST-aTk"/>
+                                    <action selector="textViewDidEndEditing:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="xlX-uC-t76"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Iv7-M6-1Zf" userLabel="FlourTextField">
+                                <rect key="frame" x="196" y="209" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="textViewDidBeginEditing:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="7Kg-3M-WIu"/>
+                                    <action selector="textViewDidBeginEditing:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7TV-co-eM0"/>
+                                    <action selector="textViewDidEndEditing:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="71a-Bc-z4S"/>
+                                    <action selector="textViewDidEndEditing:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="Ep8-dN-BxM"/>
+                                    <action selector="textViewDidEndEditing:" destination="BYZ-38-t0r" eventType="editingChanged" id="aUg-Pe-qXM"/>
+                                    <action selector="textViewDidEndEditing:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="jz8-el-atf"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWW-LF-Beg">
+                                <rect key="frame" x="119" y="370" width="64" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Calculate"/>
+                                <connections>
+                                    <action selector="cal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2DD-9E-obL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Loaf's Hydration:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQs-Fc-BMO">
+                                <rect key="frame" x="27" y="168" width="130" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1c-fY-txC">
+                                <rect key="frame" x="196" y="170" width="65" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="calLabel" destination="p1c-fY-txC" id="kQ7-D0-k4k"/>
+                        <outlet property="flourInput" destination="Iv7-M6-1Zf" id="ZuE-i5-dVo"/>
+                        <outlet property="starterHydrationInput" destination="CkA-qe-LUm" id="dRn-l2-AaO"/>
+                        <outlet property="starterInput" destination="agB-3F-pO4" id="Lx3-9W-liZ"/>
+                        <outlet property="waterInput" destination="fY6-vb-KlZ" id="gP7-eM-WJg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-92" y="-161"/>
         </scene>
     </scenes>
 </document>

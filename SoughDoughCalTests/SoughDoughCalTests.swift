@@ -33,4 +33,46 @@ class SoughDoughCalTests: XCTestCase {
         }
     }
     
+    func testCalHyrdation() {
+        let vc = ViewController()
+        vc.flour = 350
+        vc.water = 210
+        vc.starter = 120
+        vc.starterHydration = 100
+        
+        let testValue:Float = vc.calHyrdation()
+        print(testValue)
+        let actualValue:Float = (((210 + 60) / (350 + 60))*100)
+        print(actualValue)
+        XCTAssertEqual(round(testValue), round(actualValue))
+        XCTAssertEqual(round(testValue), 66)
+        
+    }
+    
+    func testGetStarterFlour() {
+        let vc = ViewController()
+        vc.flour = 350
+        vc.water = 250
+        vc.starter = 120
+        vc.starterHydration = 100
+        
+        let testValue:Float = vc.getStarterFlour()
+        
+        XCTAssertEqual(testValue, 60)
+        
+    }
+    func testGetStarterWater() {
+        let vc = ViewController()
+        vc.flour = 350
+        vc.water = 250
+        vc.starter = 120
+        vc.starterHydration = 100
+        let testValue:Float = vc.getStarterWater()
+        XCTAssertEqual(testValue, 60)
+        
+    }
+    
+    
+    
+    
 }
