@@ -57,7 +57,14 @@ class SoughDoughCalTests: XCTestCase {
         
     }
     
+    func testCalSalt(){
+        let testValue:Float = vc.calSalt()
+        XCTAssertEqual(testValue, 7)
+    }
     
-    
+    func testCalWeigh(){
+        let testValue:Float = vc.calWeight()
+        XCTAssertEqual(testValue, 680)
+    }
     
 }

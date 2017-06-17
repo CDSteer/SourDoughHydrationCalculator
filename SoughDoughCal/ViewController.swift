@@ -15,9 +15,10 @@ class ViewController: UIViewController {
     var starter:Float = 0
     var starterHydration:Float = 0
     
-    var hydration:Float = 0
-    
     @IBOutlet weak var calLabel: UILabel!
+    
+    @IBOutlet weak var saltLabel: UILabel!
+    @IBOutlet weak var weightLabel: UILabel!
     
     @IBOutlet weak var waterInput: UITextField!
     @IBOutlet weak var flourInput: UITextField!
@@ -31,22 +32,18 @@ class ViewController: UIViewController {
         setPlaceHolder(textView: waterInput)
         setPlaceHolder(textView: flourInput)
         setPlaceHolder(textView: starterInput)
-        setPlaceHolderP(textView: starterHydrationInput)
+        setPlaceHolder(textView: starterHydrationInput)
         calLabel.text = "0%"
-        
-        
+        saltLabel.text = "0g"
+        weightLabel.text = "0g"
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
     func setPlaceHolder(textView:UITextField) {
         textView.text = "0"
-        textView.textColor = UIColor.lightGray
-    }
-    
-    func setPlaceHolderP(textView:UITextField) {
-        textView.text = "0%"
         textView.textColor = UIColor.lightGray
     }
     
@@ -58,17 +55,13 @@ class ViewController: UIViewController {
     }
 
     @IBAction func textViewDidEndEditing(_ textView: UITextField) {
+        // setting it to "0" even if user is still typeing in the box
         if (textView.text?.isEmpty)! {
-            if (textView == starterHydrationInput) {
-                setPlaceHolderP(textView: textView)
-            } else {
-                setPlaceHolder(textView: textView)
-            }
+            setPlaceHolder(textView: textView)
+            setPlaceHolder(textView: textView)
         } else {
             setValue(textView)
-            
-            hydration = calHyrdation()
-            showHydration()
+            updateOutput()
         }
     }
     
@@ -85,24 +78,28 @@ class ViewController: UIViewController {
             break
         case starterHydrationInput:
             starterHydration = Float(starterHydrationInput.text!)!
-            // starterHydrationInput.text = (sender.text! + "%")
             break
         default:
             break
         }
     }
     
-    func showHydration(){
+    func updateOutput(){
         calLabel.text = String(round(calHyrdation()))+"%"
-    }
-    
-    @IBAction func cal(_ sender: UIButton){
-        // setVals()
-        showHydration()
+        saltLabel.text = String(round(calSalt()))+"g"
+        weightLabel.text = String(round(calWeight()))+"g"
     }
     
     func calHyrdation() -> Float {
         return ((water + getStarterWater()) / (flour + getStarterFlour())*100)
+    }
+    
+    func calWeight() -> Float{
+        return flour+water+starter
+    }
+    
+    func calSalt() -> Float{
+        return round(calWeight()*0.011)
     }
     
     func getStarterFlour() -> Float {
