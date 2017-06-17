@@ -17,7 +17,6 @@ class SoughDoughCalTests: XCTestCase {
         vc.water = 210
         vc.starter = 120
         vc.starterHydration = 100
-        // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
     override func tearDown() {
