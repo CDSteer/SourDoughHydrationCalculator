@@ -10,9 +10,13 @@ import XCTest
 @testable import SoughDoughCal
 
 class SoughDoughCalTests: XCTestCase {
-    
+    let vc = ViewController()
     override func setUp() {
         super.setUp()
+        vc.flour = 350
+        vc.water = 210
+        vc.starter = 120
+        vc.starterHydration = 100
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
@@ -34,12 +38,6 @@ class SoughDoughCalTests: XCTestCase {
     }
     
     func testCalHyrdation() {
-        let vc = ViewController()
-        vc.flour = 350
-        vc.water = 210
-        vc.starter = 120
-        vc.starterHydration = 100
-        
         let testValue:Float = vc.calHyrdation()
         print(testValue)
         let actualValue:Float = (((210 + 60) / (350 + 60))*100)
@@ -50,23 +48,11 @@ class SoughDoughCalTests: XCTestCase {
     }
     
     func testGetStarterFlour() {
-        let vc = ViewController()
-        vc.flour = 350
-        vc.water = 250
-        vc.starter = 120
-        vc.starterHydration = 100
-        
         let testValue:Float = vc.getStarterFlour()
-        
         XCTAssertEqual(testValue, 60)
         
     }
     func testGetStarterWater() {
-        let vc = ViewController()
-        vc.flour = 350
-        vc.water = 250
-        vc.starter = 120
-        vc.starterHydration = 100
         let testValue:Float = vc.getStarterWater()
         XCTAssertEqual(testValue, 60)
         
