@@ -32,16 +32,16 @@ class ViewController: UIViewController {
         saltLabel.text = "0g"
         weightLabel.text = "0g"
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
+
     func setPlaceHolder(textView: UITextField) {
         textView.text = "0"
         textView.textColor = UIColor.lightGray
     }
-    
+
     @IBAction func textViewDidBeginEditing(_ textView: UITextField) {
         if textView.textColor == UIColor.lightGray {
             textView.text = ""
@@ -59,7 +59,7 @@ class ViewController: UIViewController {
             updateOutput()
         }
     }
-    
+
     func setValue(_ sender: UITextField) {
         switch sender {
         case waterInput:
@@ -78,21 +78,21 @@ class ViewController: UIViewController {
             break
         }
     }
-    
+
     func updateOutput() {
         calLabel.text = String(round(calHyrdation()))+"%"
         saltLabel.text = String(round(calSalt()))+"g"
         weightLabel.text = String(round(calWeight()))+"g"
     }
-    
+
     func calHyrdation() -> Float {
         return ((water + getStarterWater()) / (flour + getStarterFlour())*100)
     }
-    
+
     func calWeight() -> Float {
         return flour+water+starter
     }
-    
+
     func calSalt() -> Float {
         return round(calWeight()*0.011)
     }

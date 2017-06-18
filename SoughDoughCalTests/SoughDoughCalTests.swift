@@ -19,17 +19,17 @@ class SoughDoughCalTests: XCTestCase {
         vc.starter = 120
         vc.starterHydration = 100
     }
-    
+
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
-    
+
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
-    
+
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {
@@ -43,25 +43,25 @@ class SoughDoughCalTests: XCTestCase {
         XCTAssertEqual(round(testValue), round(actualValue))
         XCTAssertEqual(round(testValue), 66)
     }
-    
+
     func testGetStarterFlour() {
         let testValue: Float = vc.getStarterFlour()
         XCTAssertEqual(testValue, 60)
     }
-    
+
     func testGetStarterWater() {
         let testValue: Float = vc.getStarterWater()
         XCTAssertEqual(testValue, 60)
     }
-    
+
     func testCalSalt() {
         let testValue: Float = vc.calSalt()
         XCTAssertEqual(testValue, 7)
     }
-    
+
     func testCalWeigh() {
         let testValue: Float = vc.calWeight()
         XCTAssertEqual(testValue, 680)
     }
-    
+
 }
