@@ -11,6 +11,7 @@ import XCTest
 
 class SoughDoughCalTests: XCTestCase {
     let vc = ViewController()
+
     override func setUp() {
         super.setUp()
         vc.flour = 350
@@ -38,7 +39,7 @@ class SoughDoughCalTests: XCTestCase {
     
     func testCalHyrdation() {
         let testValue: Float = vc.calHyrdation()
-        let actualValue: Float = (((210 + 60) / (350 + 60))*100)
+        let actualValue: Float = ((210 + 60) / (350 + 60))*100
         XCTAssertEqual(round(testValue), round(actualValue))
         XCTAssertEqual(round(testValue), 66)
     }

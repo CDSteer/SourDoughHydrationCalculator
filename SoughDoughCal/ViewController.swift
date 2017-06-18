@@ -96,15 +96,14 @@ class ViewController: UIViewController {
     func calSalt() -> Float {
         return round(calWeight()*0.011)
     }
-    
+
     func getStarterFlour() -> Float {
         return (starter / (1+(starterHydration/100)))
     }
-    
+
     func getStarterWater() -> Float {
         return starter - getStarterFlour()
     }
-
 
 }
 
