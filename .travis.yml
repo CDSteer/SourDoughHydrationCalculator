@@ -1,4 +1,2 @@
-language: objective-c
+language: swift
 osx_image: xcode8.3
-script:
-  - xcodebuild -scheme SoughDoughCal -workspace SoughDoughCal.xcworkspace -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6, OS=10.3' build test
