@@ -9,23 +9,18 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
-    var flour:Float = 0
-    var water:Float = 0
-    var starter:Float = 0
-    var starterHydration:Float = 0
-    
+    var flour: Float = 0
+    var water: Float = 0
+    var starter: Float = 0
+    var starterHydration: Float = 0
     @IBOutlet weak var calLabel: UILabel!
-    
     @IBOutlet weak var saltLabel: UILabel!
     @IBOutlet weak var weightLabel: UILabel!
-    
     @IBOutlet weak var waterInput: UITextField!
     @IBOutlet weak var flourInput: UITextField!
     @IBOutlet weak var starterInput: UITextField!
     @IBOutlet weak var starterHydrationInput: UITextField!
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -42,7 +37,7 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    func setPlaceHolder(textView:UITextField) {
+    func setPlaceHolder(textView: UITextField) {
         textView.text = "0"
         textView.textColor = UIColor.lightGray
     }
@@ -65,7 +60,7 @@ class ViewController: UIViewController {
         }
     }
     
-    func setValue(_ sender:UITextField){
+    func setValue(_ sender: UITextField) {
         switch sender {
         case waterInput:
             water = Float(waterInput.text!)!
@@ -84,7 +79,7 @@ class ViewController: UIViewController {
         }
     }
     
-    func updateOutput(){
+    func updateOutput() {
         calLabel.text = String(round(calHyrdation()))+"%"
         saltLabel.text = String(round(calSalt()))+"g"
         weightLabel.text = String(round(calWeight()))+"g"
@@ -94,11 +89,11 @@ class ViewController: UIViewController {
         return ((water + getStarterWater()) / (flour + getStarterFlour())*100)
     }
     
-    func calWeight() -> Float{
+    func calWeight() -> Float {
         return flour+water+starter
     }
     
-    func calSalt() -> Float{
+    func calSalt() -> Float {
         return round(calWeight()*0.011)
     }
     
@@ -106,7 +101,7 @@ class ViewController: UIViewController {
         return (starter / (1+(starterHydration/100)))
     }
     
-    func getStarterWater() -> Float{
+    func getStarterWater() -> Float {
         return starter - getStarterFlour()
     }
 

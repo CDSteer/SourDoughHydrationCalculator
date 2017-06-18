@@ -37,33 +37,29 @@ class SoughDoughCalTests: XCTestCase {
     }
     
     func testCalHyrdation() {
-        let testValue:Float = vc.calHyrdation()
-        print(testValue)
-        let actualValue:Float = (((210 + 60) / (350 + 60))*100)
-        print(actualValue)
+        let testValue: Float = vc.calHyrdation()
+        let actualValue: Float = (((210 + 60) / (350 + 60))*100)
         XCTAssertEqual(round(testValue), round(actualValue))
         XCTAssertEqual(round(testValue), 66)
-        
     }
     
     func testGetStarterFlour() {
-        let testValue:Float = vc.getStarterFlour()
+        let testValue: Float = vc.getStarterFlour()
         XCTAssertEqual(testValue, 60)
-        
-    }
-    func testGetStarterWater() {
-        let testValue:Float = vc.getStarterWater()
-        XCTAssertEqual(testValue, 60)
-        
     }
     
-    func testCalSalt(){
-        let testValue:Float = vc.calSalt()
+    func testGetStarterWater() {
+        let testValue: Float = vc.getStarterWater()
+        XCTAssertEqual(testValue, 60)
+    }
+    
+    func testCalSalt() {
+        let testValue: Float = vc.calSalt()
         XCTAssertEqual(testValue, 7)
     }
     
-    func testCalWeigh(){
-        let testValue:Float = vc.calWeight()
+    func testCalWeigh() {
+        let testValue: Float = vc.calWeight()
         XCTAssertEqual(testValue, 680)
     }
     
