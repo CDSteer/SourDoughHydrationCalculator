@@ -522,6 +522,7 @@
 				AF4999561EF49D1600EAD301 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AF4999571EF49D1600EAD301 /* Build configuration list for PBXNativeTarget "SoughDoughCalTests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +531,7 @@
 				AF4999591EF49D1600EAD301 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AF49995A1EF49D1600EAD301 /* Build configuration list for PBXNativeTarget "SoughDoughCalUITests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +540,7 @@
 				AF49995C1EF49D1600EAD301 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
