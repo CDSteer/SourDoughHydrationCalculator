@@ -1,3 +1,4 @@
 language: objective-c
 xcode_project: SoughDoughCal.xcodeproj # path to your xcodeproj folder
 xcode_scheme: SoughDoughCal
+  - xcodebuild [DEFAULT_OPTIONS] CODE_SIGNING_REQUIRED=NO
