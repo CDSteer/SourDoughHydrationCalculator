@@ -36,7 +36,7 @@ class SoughDoughCalTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-    
+
     func testCalHyrdation() {
         let testValue: Float = vc.calHyrdation()
         let actualValue: Float = ((210 + 60) / (350 + 60))*100
