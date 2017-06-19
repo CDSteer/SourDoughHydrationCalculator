@@ -15,6 +15,7 @@
 		AF49993A1EF49D1500EAD301 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF4999381EF49D1500EAD301 /* LaunchScreen.storyboard */; };
 		AF4999451EF49D1600EAD301 /* SoughDoughCalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4999441EF49D1600EAD301 /* SoughDoughCalTests.swift */; };
 		AF4999501EF49D1600EAD301 /* SoughDoughCalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF49994F1EF49D1600EAD301 /* SoughDoughCalUITests.swift */; };
+		AF9E6C251EF7DE7500485699 /* SourDough.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9E6C241EF7DE7500485699 /* SourDough.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		AF49994B1EF49D1600EAD301 /* SoughDoughCalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoughDoughCalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF49994F1EF49D1600EAD301 /* SoughDoughCalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoughDoughCalUITests.swift; sourceTree = "<group>"; };
 		AF4999511EF49D1600EAD301 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF9E6C241EF7DE7500485699 /* SourDough.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourDough.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				AF4999381EF49D1500EAD301 /* LaunchScreen.storyboard */,
 				AF49993B1EF49D1500EAD301 /* Info.plist */,
 				AF4999331EF49D1500EAD301 /* SoughDoughCal.xcdatamodeld */,
+				AF9E6C241EF7DE7500485699 /* SourDough.swift */,
 			);
 			path = SoughDoughCal;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 			files = (
 				AF49992F1EF49D1500EAD301 /* ViewController.swift in Sources */,
 				AF49992D1EF49D1500EAD301 /* AppDelegate.swift in Sources */,
+				AF9E6C251EF7DE7500485699 /* SourDough.swift in Sources */,
 				AF4999351EF49D1500EAD301 /* SoughDoughCal.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
